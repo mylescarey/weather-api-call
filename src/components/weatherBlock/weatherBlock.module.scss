@@ -1,0 +1,37 @@
+$primary-colour: #c62168;
+$card-width: 265px;
+$card-height: $card-width * 3.5 / 2.5;
+$picture-width: 100px;
+$picture-height: $picture-width * 3.5 / 2.5;
+
+.scene {
+  width: $card-width;
+  min-width: $card-width;
+  height: $card-height;
+  perspective: 600px;
+  margin: 10px;
+  border: 2px solid $primary-colour;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+
+  h1 {
+    font-weight: 400;
+    background-color: $primary-colour;
+    color: white;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .weatherDetails {
+    padding: 10px;
+    color: $primary-colour;
+  }
+}
